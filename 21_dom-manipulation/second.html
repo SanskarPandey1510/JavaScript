@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: grey;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <ul class="fclass">
+        <li class="language">Javascript</li>
+     
+    </ul>
+</body>
+<script>
+     function adde(s){
+        const li=document.createElement('li')
+        li.innerHTML=""+s
+
+       document.querySelector(".fclass").appendChild(li)
+     }
+     adde("Pythom")
+     adde("c++")
+     adde("java")
+     const see=document.querySelector("li:nth-child(2)")
+     const li=document.createElement('li')
+     li.textContent="python3"
+     see.replaceWith(li)
+
+     const item=document.querySelector("li:nth-child(3)")
+     console.log(item)
+
+     item.innerHTML="C#"
+</script>
+</html>

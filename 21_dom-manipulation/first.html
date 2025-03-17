@@ -6,19 +6,65 @@
     <title>Document</title>
     <style>
         body{
-            background-color: aqua;
+            background-color: gray;
+            text-align: center;
+        }
+        .bg-black{
+            text-align: center;
         }
     </style>
 </head>
 <body>
     <h1>Hello world</h1>
     <h1>Hello</h1>
+    <h2>Hello guys</h2>
     <div class="bg-black">
 
         <h1 class="heading">Dom learnig</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        <p id="lo" class="hee">Lorem ipsum dolor sit amet consectetur adipisicing <span style="display: none;">hii</span></p>
     </div>
-    
+<input type="password" name="" id="">   
+<ul class="par">
+    <li class="master" >one</li>
+    <li class="master" >tte</li>
+    <li class="master" >three</li>
+    <li class="master" >four</li>
+    <li class="master" >five</li>
+</ul> 
 </body>
+<script>
+    const x=document.querySelector(".par")
+    // console.log(x)
+    // console.log(x.children)
+    // console.log(x.children[1].innerHTML)
+    // console.log(x.firstElementChild.innerHTML,x.lastElementChild.innerHTML)
+    const div=document.createElement('div')
+    div.className="co"
+    div.id=Math.floor(Math.random()*10+1)
+    // div.innerText="helloo"
+    div.setAttribute("title","gen t")
+    div.style.backgroundColor="white"
+    const addt=document.createTextNode("hello guys baby")
+    div.appendChild(addt)
+    document.body.appendChild(div)
+    console.log(div)
+
+
+</script>
 </html>
 <!-- body-> div -> h1->inner text -->
+
+
+
+
+<!-- a=document.getElementById("lo")
+<p id="lo" class="hee">
+
+a.innerText
+"Lorem ipsum dolor sit amet consectetur adipisicing"
+a.textContent
+"Lorem ipsum dolor sit amet consectetur adipisicing hii"
+a.innerHTML
+'Lorem ipsum dolor sit amet consectetur adipisicing <span style="display: none;">hii</span>'
+
+​ -->
