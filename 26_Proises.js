@@ -100,16 +100,24 @@
 
 
 
-async function findu(){
-    try{
+// async function findu(){
+//     try{
 
-        const res=await fetch("https://jsonplaceholder.typicode.com/users")
-        const data=res.json()
-        console.log(res)
-    }
-    catch(error){
-        console.log("errpr is here")
-    }
+//         const res=await fetch("https://jsonplaceholder.typicode.com/users")
+//         const data=await res.json()
+//         console.log(data)
+//     }
+//     catch(error){
+//         console.log("errpr is here")
+//     }
 
-}
-findu()
+// }
+// findu()
+
+fetch("https://jsonplaceholder.typicode.com/users").then((response)=>{
+    return response.json()
+}).then((response)=>{
+    console.log(response)
+}).catch((err)=>{
+    console.log("error")
+})
