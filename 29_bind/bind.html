@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="b1">Click here</button>
+</body>
+<script>
+    class React{
+        constructor(a,b){
+            this.a=a
+            this.b=b
+            // document.getElementById("b1").addEventListener("click",this.ev)
+            document.getElementById("b1").addEventListener("click",this.ev.bind(this))
+            // it can bind this object
+
+        }
+        ev(){
+            console.log("button clicked")
+
+        console.log(this.a)
+        // here the function is unable to access a
+        }
+    }
+    a=new React(1,2)
+</script>
+</html>
